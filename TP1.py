@@ -6,6 +6,9 @@ def recherches(caractere, mot):
             found += 1
     return found
 
+def recherches2(caractere, mot):
+    return len(mot.split(caractere))
+
 #EXERCICE 2
 Pieces = [100,50,20,10,5,2,1]
 def rendu_glouton(arendre, solution=[], i=0):

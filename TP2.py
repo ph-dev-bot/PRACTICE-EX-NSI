@@ -1,12 +1,10 @@
 #EXERCICE 1
-coef = [(15,2),(9,1),(12,3)]
-
-"""
-Objectif: Renvoyé la moyenne a partir des notes et des coefficients données
-Entré: Liste de INT Des notes avec variants
-Sortie: Moyenne INT
-"""
-def moyenne(notes:list) -> int:
+def moyenne(notes:list[(int, int)]) -> int:
+    """
+    Objectif: Renvoyer la moyenne à partir des notes et des coefficients données sous forme de liste
+    Entré: Liste deses notes avec coef (notes, coef) : (int, int)
+    Sortie: Moyenne Int
+    """
     coefTotal = 0
     note = 0
     for i in notes:
